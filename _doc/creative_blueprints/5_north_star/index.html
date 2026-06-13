@@ -1,0 +1,104 @@
+<style>
+.mode-landscape .sl-body { flex-direction: row; }
+.mode-portrait .sl-body { flex-direction: column; }
+.mode-landscape .sl-left { width: 52%; }
+.mode-landscape .sl-right { width: 48%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-1">North Star Metric</p>
+        <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+      </div>
+      <span class="flex-shrink-0 ml-4 inline-block px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-semibold">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Body: two columns -->
+    <div class="sl-body flex gap-4 flex-1">
+
+      <!-- Left column: Operation + WVO -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <!-- Verified operation definition -->
+        <div class="rounded-xl border-2 border-slate-900 p-5">
+          <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-2">Verified Operation</p>
+          <p class="font-black text-slate-900 text-lg leading-tight">Signal Cycle Completed</p>
+          <p class="text-sm text-slate-500 mt-2 leading-relaxed">A signal issued + outcome captured + accuracy score updated in the app by a real team member.</p>
+        </div>
+
+        <!-- WVO formula -->
+        <div class="rounded-xl bg-slate-50 border border-slate-200 p-5 flex-1">
+          <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-4">WVO Formula</p>
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-sm text-slate-600">Team members</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium whitespace-nowrap">Assumption — adjust: 5</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-sm text-slate-600">Signal cycles / member / week</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium whitespace-nowrap">Assumption — adjust: 20</span>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-slate-200">
+            <p class="text-xs text-slate-400 mb-1.5">5 members × 20 cycles/week =</p>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-black text-slate-900">100</span>
+              <span class="text-sm text-slate-500 font-medium">signal cycles / week</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: Value + Annual impact -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <!-- Value derivation -->
+        <div class="rounded-xl bg-slate-50 border border-slate-200 p-5">
+          <p class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-4">Value Per Operation</p>
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-sm text-slate-600">Manual time saved / cycle</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium whitespace-nowrap">Assumption — adjust: 12 min</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-sm text-slate-600">Staff hourly rate</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium whitespace-nowrap">Assumption — adjust: $5/hr</span>
+            </div>
+          </div>
+          <div class="mt-3 pt-3 border-t border-slate-200">
+            <p class="text-xs text-slate-400">12 min ÷ 60 × $5/hr = <span class="font-bold text-slate-700">$1.00 per cycle</span></p>
+          </div>
+        </div>
+
+        <!-- Annual impact -->
+        <div class="rounded-xl bg-slate-900 p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <p class="text-xs font-bold tracking-widest uppercase text-amber-400 mb-4">Projected Team Impact</p>
+            <div>
+              <p class="text-xs text-slate-400 mb-0.5">Weekly value</p>
+              <p class="text-xl font-black text-white">$100 <span class="text-sm font-normal text-slate-400">/ week</span></p>
+              <p class="text-xs text-slate-500 mt-0.5">100 cycles × $1.00</p>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-700">
+            <p class="text-xs text-slate-400 mb-1">Annual team value</p>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-black text-amber-400">$5,200</span>
+              <span class="text-sm text-slate-400">/ year</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">$100/wk × 52 weeks</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
