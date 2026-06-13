@@ -1,0 +1,50 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-left { width: 55%; }
+.mode-landscape .sl-right { width: 45%; }
+.mode-portrait .sl-left { flex: 1; }
+.mode-portrait .sl-right { height: 38%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-left flex flex-col justify-between p-12">
+      <div>
+        <div class="flex items-center gap-2 mb-8">
+          <div class="w-2 h-2 rounded-full bg-amber-400"></div>
+          <span class="text-xs font-semibold tracking-widest uppercase text-slate-400">Team Analytics · Android</span>
+        </div>
+        <h1 class="text-5xl font-black text-slate-900 leading-none mb-6">
+          Signal<br/>Intelligence<br/>for Your Team.
+        </h1>
+        <p class="text-base text-slate-500 max-w-xs leading-relaxed">
+          AI-powered Aviator signal tracking, accuracy scoring, and historical trend analysis — built for teams who run on data.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <data-attribution />
+        <div class="w-px h-7 bg-slate-200"></div>
+        <span class="text-xs text-slate-400">Android · Team Edition</span>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-right relative overflow-hidden bg-slate-900">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Dark%20analytics%20dashboard%20with%20glowing%20signal%20graphs%20and%20trend%20lines%2C%20deep%20navy%20background%2C%20amber%20and%20blue%20light%20streaks%2C%20premium%20cinematic%20data%20visualization%2C%20editorial"
+        alt="AviSignal analytics"
+        class="w-full h-full object-cover opacity-75"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/50 to-transparent"></div>
+      <div class="absolute bottom-10 right-10 text-right">
+        <div class="text-4xl font-black text-amber-400 tracking-tight">AviSignal</div>
+        <div class="text-sm text-slate-300 mt-1">Powered by AI Pattern Analysis</div>
+      </div>
+    </div>
+
+  </div>
+</section>
