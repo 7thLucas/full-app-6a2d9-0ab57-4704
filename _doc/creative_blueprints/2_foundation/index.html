@@ -1,0 +1,62 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-problem { width: 50%; }
+.mode-landscape .sl-solution { width: 50%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root flex h-full">
+
+    <!-- Problem -->
+    <div class="sl-problem flex flex-col justify-center p-12">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-red-500 font-black text-sm">✕</div>
+        <span class="text-xs font-bold tracking-widest uppercase text-red-400">The Problem</span>
+      </div>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight mb-7">
+        Teams fly blind without a shared signal record.
+      </h2>
+      <div class="space-y-4">
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-600 leading-relaxed">Signals live in chat and vanish — no persistent history the team can learn from.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-600 leading-relaxed">No accuracy data — impossible to tell which calls work and which consistently fail.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-600 leading-relaxed">Patterns hidden in historical data stay invisible without dedicated analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="sl-solution flex flex-col justify-center p-12 bg-slate-900">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-8 h-8 rounded-full bg-amber-400/20 flex items-center justify-center text-amber-400 font-black text-sm">✓</div>
+        <span class="text-xs font-bold tracking-widest uppercase text-amber-400">The Solution</span>
+      </div>
+      <h2 class="text-3xl font-black text-white leading-tight mb-7">
+        One shared intelligence layer for the whole team.
+      </h2>
+      <div class="space-y-4">
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-300 leading-relaxed">AI-powered signal display from pattern analysis of historical round data — always current.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-300 leading-relaxed">Full signal history with outcomes logged — accuracy scores always on screen for every call.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0"></div>
+          <p class="text-sm text-slate-300 leading-relaxed">Trend charts surface current and forward-looking patterns from rolling historical data windows.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
